@@ -1,0 +1,1140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>玖玖玖久久九_怀旧数码影像修复_老式摄像机与磁带档案</title>
+<meta name="description" content="玖玖玖久久九是一个围绕老式摄像机、磁带与家庭影像修复的档案站。提供 VHS 转录、Hi8 修复、胶片扫描、老旧录像带疑难故障处理与设备评测等具体条目，适合家里存着旧录像带的普通人。">
+<meta name="keywords" content="VHS转录,Hi8修复,家庭录像带,摄像机评测,磁带霉斑清洗">
+<style>
+:root{
+  --ink:#15181d;
+  --ink-2:#2c333d;
+  --muted:#5d6672;
+  --line:#dfe3ea;
+  --line-2:#eceff4;
+  --bg:#f6f4ef;
+  --panel:#ffffff;
+  --brand:#0f4c5c;
+  --brand-2:#137a8c;
+  --accent:#d9722c;
+  --accent-soft:#fdf1e7;
+  --gold:#b8863b;
+  --ok:#2f7d5c;
+  --r:10px;
+  --r-lg:16px;
+  --shadow:0 1px 2px rgba(21,24,29,.05),0 8px 24px rgba(21,24,29,.06);
+  --f-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  --f-serif:"Songti SC","Source Han Serif SC",Georgia,serif;
+  --sticky:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--f-sans);color:var(--ink);background:var(--bg);
+  line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ===== 吸顶 ===== */
+.sticky-wrap{position:sticky;top:0;z-index:60}
+.notice{
+  background:var(--ink);color:#f2e9dc;font-size:13px;
+  padding:8px 16px;display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;
+}
+.notice b{color:#ffcf8f;font-weight:600}
+.notice .dot{width:6px;height:6px;border-radius:50%;background:#ffcf8f;flex:none}
+.notice a{color:#ffd9a8;border-bottom:1px dashed rgba(255,217,168,.5)}
+
+header.site{
+  background:rgba(255,255,255,.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.head-inner{
+  max-width:1360px;margin:0 auto;padding:12px 24px;
+  display:flex;align-items:center;gap:24px;
+}
+.brand{display:flex;align-items:center;gap:11px;flex:none}
+.brand-mark{width:42px;height:42px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-text .name{font-size:19px;font-weight:800;letter-spacing:.06em;font-family:var(--f-serif);color:var(--brand)}
+.brand-text .sub{font-size:11px;color:var(--muted);letter-spacing:.22em}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:8px}
+nav.main a{
+  padding:7px 12px;border-radius:8px;font-size:14px;color:var(--ink-2);
+  transition:background .15s,color .15s;
+}
+nav.main a:hover{background:var(--line-2);color:var(--brand)}
+.head-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.search{display:flex;align-items:center;background:var(--line-2);border-radius:9px;padding:0 4px 0 12px;border:1px solid transparent;transition:.15s}
+.search:focus-within{border-color:var(--brand-2);background:#fff}
+.search input{
+  border:0;background:transparent;padding:8px 6px;font-size:14px;width:170px;color:var(--ink);
+  font-family:inherit;
+}
+.search input:focus{outline:none}
+.search button{
+  border:0;background:var(--brand);color:#fff;border-radius:7px;font-size:13px;padding:6px 12px;margin:3px;
+}
+.btn-cta{
+  background:var(--accent);color:#fff;font-size:14px;font-weight:600;
+  padding:9px 16px;border-radius:9px;border:0;white-space:nowrap;
+}
+.btn-cta:hover{background:#c26322}
+
+/* ===== 容器 ===== */
+.wrap{max-width:1360px;margin:0 auto;padding:0 24px}
+section{scroll-margin-top:var(--sticky)}
+
+/* ===== 首屏 ===== */
+.hero{
+  background:linear-gradient(180deg,#0f4c5c 0%,#0b3a47 60%,#0a323c 100%);
+  color:#eef4f5;position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 5px);
+  opacity:.7;
+}
+.hero-grid{
+  max-width:1360px;margin:0 auto;padding:56px 24px 60px;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;position:relative;z-index:2;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.16em;
+  color:#9fd3dc;border:1px solid rgba(159,211,220,.35);padding:5px 12px;border-radius:99px;margin-bottom:20px;
+}
+.hero h1{
+  font-family:var(--f-serif);font-size:clamp(34px,4.6vw,56px);
+  letter-spacing:.08em;line-height:1.15;color:#fff;margin-bottom:18px;
+}
+.hero h1 .glow{color:#ffcf8f}
+.hero-desc{font-size:15.5px;color:#c4dbe0;max-width:34em;margin-bottom:14px}
+.hero-desc strong{color:#fff;font-weight:600}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:13px;color:#9ec3ca;margin:22px 0 28px}
+.hero-meta span{display:flex;align-items:center;gap:7px}
+.hero-meta i{width:5px;height:5px;background:#ffcf8f;border-radius:50%;display:inline-block}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn-main{background:#ffcf8f;color:#0a323c;font-weight:700;font-size:15px;padding:12px 24px;border-radius:10px;border:0;display:inline-block}
+.btn-main:hover{background:#ffdcae}
+.btn-ghost{border:1px solid rgba(255,255,255,.35);color:#e8f2f4;font-size:15px;padding:12px 22px;border-radius:10px;display:inline-block}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+
+/* 磁带视觉 */
+.tape-stage{position:relative;display:flex;justify-content:center;align-items:center;min-height:290px}
+.tape-svg{width:100%;max-width:420px;filter:drop-shadow(0 22px 40px rgba(0,0,0,.4))}
+.badge-float{
+  position:absolute;background:#fff;color:var(--ink);border-radius:12px;padding:9px 13px;font-size:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.28);line-height:1.35;
+}
+.badge-float b{display:block;font-size:14px;color:var(--brand)}
+.badge-a{top:6px;right:0}
+.badge-b{bottom:6px;left:0}
+
+/* ===== 布局 ===== */
+.layout{
+  max-width:1360px;margin:0 auto;padding:36px 24px 64px;
+  display:grid;grid-template-columns:180px minmax(0,1fr) 288px;gap:32px;align-items:start;
+}
+aside.chan{position:sticky;top:calc(var(--sticky) + 16px)}
+.chan-title{font-size:12px;letter-spacing:.2em;color:var(--muted);margin-bottom:12px;font-weight:600}
+.chan-list{display:flex;flex-direction:column;gap:2px;border-left:2px solid var(--line);padding-left:0}
+.chan-list a{
+  display:flex;justify-content:space-between;align-items:center;gap:8px;
+  padding:8px 10px 8px 14px;font-size:14px;color:var(--ink-2);border-radius:0 8px 8px 0;
+  border-left:2px solid transparent;margin-left:-2px;
+}
+.chan-list a span.num{font-size:11px;color:#98a2b0;font-variant-numeric:tabular-nums}
+.chan-list a:hover{background:var(--line-2);color:var(--brand);border-left-color:var(--brand-2)}
+.chan-list a.on{color:var(--brand);font-weight:700;border-left-color:var(--accent);background:#fff}
+
+main{min-width:0}
+aside.side{position:sticky;top:calc(var(--sticky) + 16px);display:flex;flex-direction:column;gap:22px}
+
+/* 通用面板 */
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px}
+.sec{margin-bottom:44px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.sec-head h2{font-size:23px;font-family:var(--f-serif);letter-spacing:.03em;position:relative;padding-left:14px}
+.sec-head h2::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:4px;border-radius:2px;background:var(--accent)}
+.sec-head .lead{font-size:13.5px;color:var(--muted);max-width:44em}
+.sec-head .more{font-size:13px;color:var(--brand-2);border-bottom:1px solid rgba(19,122,140,.3);white-space:nowrap}
+
+/* 概览 */
+.overview p{font-size:15px;color:var(--ink-2);margin-bottom:14px}
+.overview p:last-child{margin-bottom:0}
+.ov-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.ov-fact{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
+.ov-fact b{display:block;font-size:20px;color:var(--brand);font-family:var(--f-serif)}
+.ov-fact span{font-size:12.5px;color:var(--muted)}
+
+/* 卡片网格 */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));gap:18px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s,border-color .18s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#c9d3de}
+.card-img{position:relative;aspect-ratio:4/3;background:var(--line-2);overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover}
+.card-tag{
+  position:absolute;top:10px;left:10px;background:rgba(15,76,92,.92);color:#fff;
+  font-size:11.5px;padding:3px 9px;border-radius:6px;letter-spacing:.04em;
+}
+.card-body{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1}
+.card-body h3{font-size:15.5px;margin-bottom:7px;letter-spacing:.01em}
+.card-body h3 a:hover{color:var(--brand-2)}
+.card-desc{font-size:13px;color:var(--muted);line-height:1.68;flex:1}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;font-size:12px;color:#8b95a3}
+.hot{color:var(--accent);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.chip{font-size:11.5px;background:var(--line-2);color:var(--ink-2);padding:2px 8px;border-radius:5px}
+.chip:hover{background:#e3e8ef}
+
+/* 动态列表 */
+.updates{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
+.update-row{
+  display:grid;grid-template-columns:74px minmax(0,1fr) auto;gap:14px;align-items:baseline;
+  padding:12px 18px;border-bottom:1px solid var(--line-2);font-size:14px;
+}
+.update-row:last-child{border-bottom:0}
+.update-row time{font-size:12.5px;color:#8b95a3;font-variant-numeric:tabular-nums}
+.update-row .t{font-weight:600;color:var(--ink)}
+.update-row .t:hover{color:var(--brand-2)}
+.update-row .s{color:var(--muted);font-size:13px;display:block;margin-top:2px}
+.update-row .tagx{font-size:11.5px;color:var(--ok);background:#e9f4ee;padding:2px 8px;border-radius:5px;white-space:nowrap}
+
+/* 分类网格 */
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.cat{
+  display:block;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  padding:14px 15px;transition:.16s;
+}
+.cat:hover{border-color:var(--brand-2);background:#fff;box-shadow:var(--shadow)}
+.cat b{display:block;font-size:15px;margin-bottom:3px}
+.cat span{font-size:12px;color:var(--muted)}
+
+/* 深度解析 */
+.article{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);padding:32px 34px}
+.article h3{font-size:18px;font-family:var(--f-serif);margin:26px 0 10px;color:var(--brand);letter-spacing:.02em}
+.article h3:first-child{margin-top:0}
+.article p{font-size:14.5px;color:var(--ink-2);margin-bottom:12px;text-align:justify}
+.article ul{margin:4px 0 14px;padding-left:0}
+.article ul li{
+  font-size:14px;color:var(--ink-2);padding-left:20px;position:relative;margin-bottom:8px;
+}
+.article ul li::before{
+  content:"";position:absolute;left:4px;top:.72em;width:6px;height:6px;border-radius:2px;background:var(--accent);transform:rotate(45deg);
+}
+.article b{color:var(--ink)}
+.callout{
+  background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:0 10px 10px 0;
+  padding:14px 18px;font-size:13.5px;color:#7a4218;margin:16px 0;
+}
+
+/* 体验指南 步骤 */
+.steps{counter-reset:st;display:grid;gap:12px}
+.step{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:18px 20px 18px 62px;position:relative;
+}
+.step::before{
+  counter-increment:st;content:counter(st,decimal-leading-zero);
+  position:absolute;left:18px;top:16px;font-family:var(--f-serif);font-size:22px;color:var(--accent);font-weight:700;
+}
+.step h4{font-size:15.5px;margin-bottom:5px}
+.step p{font-size:13.5px;color:var(--muted)}
+
+/* FAQ */
+.faq{border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;background:var(--panel)}
+details{border-bottom:1px solid var(--line-2)}
+details:last-child{border-bottom:0}
+summary{
+  padding:15px 20px;font-size:14.5px;font-weight:600;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--brand-2);font-size:20px;font-weight:400;flex:none;line-height:1}
+details[open] summary::after{content:"−"}
+details[open] summary{color:var(--brand)}
+details .ans{padding:0 20px 16px;font-size:13.5px;color:var(--muted);line-height:1.8}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.cmt{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.cmt-top{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.avatar{
+  width:30px;height:30px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:13px;font-weight:700;color:#fff;font-family:var(--f-serif);
+}
+.cmt-top b{font-size:13.5px}
+.cmt-top time{font-size:11.5px;color:#98a2b0;margin-left:auto}
+.cmt p{font-size:13px;color:var(--ink-2);line-height:1.7}
+.cmt .on{display:inline-block;margin-top:8px;font-size:11.5px;color:var(--brand-2);background:#e8f3f5;padding:2px 8px;border-radius:5px}
+
+/* 资讯 */
+.news{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.news-item{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column}
+.news-item .thumb{aspect-ratio:3/2;overflow:hidden;background:var(--line-2)}
+.news-item .thumb img{width:100%;height:100%;object-fit:cover}
+.news-item .nb{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+.news-item h3{font-size:15px;margin-bottom:6px}
+.news-item h3:hover{color:var(--brand-2)}
+.news-item .meta{font-size:11.5px;color:#98a2b0;margin-bottom:8px;letter-spacing:.03em}
+.news-item p{font-size:13px;color:var(--muted);flex:1}
+
+/* 相关推荐标签索引 */
+.rel-tags{display:flex;flex-wrap:wrap;gap:9px}
+.rel-tags a{
+  background:var(--panel);border:1px solid var(--line);border-radius:99px;
+  padding:7px 15px;font-size:13.5px;color:var(--ink-2);transition:.15s;
+}
+.rel-tags a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+.rel-tags a small{color:#98a2b0;margin-left:5px;font-size:11px}
+.rel-tags a:hover small{color:#bfe0e6}
+
+/* 榜单 */
+.rank{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
+.rank-row{display:flex;gap:14px;align-items:center;padding:12px 18px;border-bottom:1px solid var(--line-2)}
+.rank-row:last-child{border-bottom:0}
+.rank-no{
+  font-family:var(--f-serif);font-size:19px;font-weight:700;color:#c3ccd7;width:26px;flex:none;text-align:center;
+}
+.rank-row:nth-child(1) .rank-no{color:var(--accent)}
+.rank-row:nth-child(2) .rank-no{color:var(--gold)}
+.rank-row:nth-child(3) .rank-no{color:#8a9bab}
+.rank-main{flex:1;min-width:0}
+.rank-main b{font-size:14px;display:block}
+.rank-main span{font-size:12px;color:var(--muted)}
+.rank-val{font-size:12px;color:var(--accent);font-weight:700;white-space:nowrap}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:22px}
+.timeline::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl-item{position:relative;padding-bottom:18px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-22px;top:6px;width:10px;height:10px;border-radius:50%;
+  background:#fff;border:2px solid var(--brand-2);
+}
+.tl-item b{font-size:14px;display:block;margin-bottom:2px}
+.tl-item time{font-size:11.5px;color:#98a2b0;letter-spacing:.04em}
+.tl-item p{font-size:13px;color:var(--muted);margin-top:3px}
+
+/* 侧栏组件 */
+.side-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px}
+.side-card h3{font-size:14.5px;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid var(--line-2);letter-spacing:.04em}
+.side-list li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.side-list li:last-child{border-bottom:0;padding-bottom:0}
+.side-list a{display:flex;gap:9px;align-items:baseline}
+.side-list a:hover{color:var(--brand-2)}
+.side-list .n{font-size:11.5px;color:var(--accent);font-weight:700;flex:none;width:16px}
+.side-list .d{font-size:11.5px;color:#98a2b0;margin-top:2px;display:block;padding-left:25px}
+.side-stat{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.side-stat div{background:var(--bg);border-radius:8px;padding:10px;text-align:center}
+.side-stat b{display:block;font-family:var(--f-serif);font-size:19px;color:var(--brand)}
+.side-stat span{font-size:11.5px;color:var(--muted)}
+.side-cta{
+  background:linear-gradient(150deg,#0f4c5c,#137a8c);color:#eaf4f6;border-radius:var(--r-lg);padding:20px;
+}
+.side-cta h3{color:#fff;border:0;padding:0;font-size:16px;margin-bottom:8px}
+.side-cta p{font-size:12.5px;color:#bfdbe1;margin-bottom:14px}
+.side-cta .btn-main{display:block;text-align:center;font-size:14px;padding:10px;background:#ffcf8f;color:#0a323c}
+
+/* 页尾 */
+footer.site{background:#101a1f;color:#a9b8bd;padding:48px 24px 26px;margin-top:20px}
+.foot-inner{max-width:1360px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px}
+.foot-brand .brand-text .name{color:#ffcf8f}
+.foot-brand .brand-text .sub{color:#7c9096}
+.foot-brand p{font-size:13px;color:#8fa3a9;margin-top:14px;line-height:1.8;max-width:30em}
+footer h4{font-size:13.5px;color:#e8f0f2;margin-bottom:12px;letter-spacing:.06em}
+footer ul li{margin-bottom:8px;font-size:13px}
+footer ul a:hover{color:#ffcf8f}
+.foot-bottom{
+  max-width:1360px;margin:32px auto 0;padding-top:18px;border-top:1px solid #223136;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;color:#6f8489;
+}
+.no-result{display:none;padding:22px;text-align:center;color:var(--muted);font-size:14px;background:var(--panel);border:1px dashed var(--line);border-radius:var(--r)}
+
+@media (max-width:1024px){
+  :root{--sticky:100px}
+  .layout{grid-template-columns:minmax(0,1fr) 272px;gap:26px}
+  aside.chan{display:none}
+  nav.main{display:none}
+  .hero-grid{grid-template-columns:1fr;gap:34px;padding:40px 24px 48px}
+  .tape-stage{min-height:auto;order:-1}
+  .tape-svg{max-width:330px}
+  .foot-inner{grid-template-columns:1fr 1fr}
+}
+@media (max-width:740px){
+  :root{--sticky:96px}
+  .head-inner{padding:10px 14px;gap:12px;flex-wrap:wrap}
+  .search input{width:120px}
+  .head-tools{gap:8px}
+  nav.main{display:none}
+  .layout{grid-template-columns:1fr;padding:24px 14px 48px;gap:30px}
+  aside.side{position:static}
+  .wrap{padding:0 14px}
+  .hero-grid{padding:32px 14px 40px}
+  .badge-float{display:none}
+  .ov-facts{grid-template-columns:1fr}
+  .article{padding:22px 18px}
+  .update-row{grid-template-columns:1fr;gap:3px;padding:12px 15px}
+  .update-row time{order:-1}
+  .foot-inner{grid-template-columns:1fr;gap:26px}
+  .notice{font-size:12px;padding:7px 10px;gap:8px;text-align:center}
+  .sec-head h2{font-size:20px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="notice">
+    <span class="dot"></span>
+    <span>本周新增 <b>12 条</b> 磁带修复档案 · 11 月 23 日更新《Hi8 霉斑清洗全流程》</span>
+    <span class="dot"></span>
+    <span>11 月 22 日上线 <a href="/#updates">松下 NV-M7 常见故障对照表</a></span>
+  </div>
+
+  <header class="site">
+    <div class="head-inner">
+      <a class="brand" href="/#top" aria-label="玖玖玖久久九 首页">
+        <svg class="brand-mark" viewBox="0 0 44 44" role="img" aria-label="玖玖玖久久九 磁带标志">
+          <rect x="2" y="8" width="40" height="28" rx="5" fill="#0f4c5c"/>
+          <rect x="7" y="13" width="30" height="13" rx="2" fill="#0b3a47"/>
+          <circle cx="15.5" cy="19.5" r="4.2" fill="#ffcf8f"/>
+          <circle cx="28.5" cy="19.5" r="4.2" fill="#ffcf8f"/>
+          <circle cx="15.5" cy="19.5" r="1.5" fill="#0f4c5c"/>
+          <circle cx="28.5" cy="19.5" r="1.5" fill="#0f4c5c"/>
+          <rect x="12" y="29" width="20" height="3" rx="1.5" fill="#137a8c"/>
+        </svg>
+        <span class="brand-text">
+          <span class="name">玖玖玖久久九</span>
+          <span class="sub">TAPE ARCHIVE</span>
+        </span>
+      </a>
+      <nav class="main" aria-label="主导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选条目</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#cats">分类</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#rank">榜单</a>
+      </nav>
+      <div class="head-tools">
+        <form class="search" role="search" onsubmit="return false;">
+          <input id="q" type="search" placeholder="搜索条目 / 机型 / 故障" aria-label="站内搜索">
+          <button type="button" id="qbtn">查找</button>
+        </form>
+        <a class="btn-cta" href="/#guide">提交修复需求</a>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">家庭影像档案 · 自 2019 年持续整理</span>
+      <h1>玖玖玖久久九</h1>
+      <p class="hero-desc">
+        这里做一件事：把抽屉里那盘发霉的 <strong>VHS 录像带</strong>、那台开不了机的 <strong>Hi8 摄像机</strong>、那卷褪色的 <strong>8 毫米家庭胶片</strong>，重新变成能看清人脸的画面。
+      </p>
+      <p class="hero-desc">
+        已有 <strong>1,284 条</strong> 具体修复档案、<strong>96 台</strong> 老式摄录设备的故障对照与 <strong>43 篇</strong> 转录设备实测，全部按机型、磁带规格和故障现象归档。
+      </p>
+      <div class="hero-meta">
+        <span><i></i>今日 09:30 更新 3 条档案</span>
+        <span><i></i>覆盖 VHS / S-VHS / Hi8 / MiniDV / 8mm</span>
+        <span><i></i>每周三发布设备实测</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn-main" href="/#picks">查看精选修复档案</a>
+        <a class="btn-ghost" href="/#cats">按机型找方法</a>
+      </div>
+    </div>
+    <div class="tape-stage">
+      <svg class="tape-svg" viewBox="0 0 420 300" role="img" aria-label="VHS 录像带与磁带盘示意插画">
+        <defs>
+          <linearGradient id="tg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#1a2b33"/>
+            <stop offset="1" stop-color="#0b1a20"/>
+          </linearGradient>
+          <linearGradient id="reel" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ffdcae"/>
+            <stop offset="1" stop-color="#c98a44"/>
+          </linearGradient>
+        </defs>
+        <rect x="24" y="70" width="372" height="164" rx="14" fill="url(#tg)" stroke="#2b4450" stroke-width="2"/>
+        <rect x="46" y="92" width="328" height="86" rx="8" fill="#0a272f" stroke="#1d3d47"/>
+        <circle cx="130" cy="135" r="34" fill="none" stroke="#25505c" stroke-width="2"/>
+        <circle cx="290" cy="135" r="34" fill="none" stroke="#25505c" stroke-width="2"/>
+        <circle cx="130" cy="135" r="22" fill="url(#reel)" opacity=".92"/>
+        <circle cx="290" cy="135" r="22" fill="url(#reel)" opacity=".92"/>
+        <circle cx="130" cy="135" r="7" fill="#0a272f"/>
+        <circle cx="290" cy="135" r="7" fill="#0a272f"/>
+        <rect x="152" y="128" width="116" height="14" rx="3" fill="#132e37" stroke="#23505c"/>
+        <rect x="60" y="196" width="120" height="10" rx="5" fill="#137a8c" opacity=".75"/>
+        <rect x="192" y="196" width="60" height="10" rx="5" fill="#ffcf8f" opacity=".55"/>
+        <rect x="264" y="196" width="90" height="10" rx="5" fill="#2b4450"/>
+        <text x="60" y="228" fill="#6f9aa4" font-size="12" font-family="monospace" letter-spacing="2">E-180 · SUPER VHS</text>
+      </svg>
+      <div class="badge-float badge-a"><b>1,284</b>修复档案</div>
+      <div class="badge-float badge-b"><b>96 台</b>机型对照表</div>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏布局 -->
+<div class="layout">
+
+  <!-- 左频道 -->
+  <aside class="chan" aria-label="频道索引">
+    <div class="chan-title">频道索引</div>
+    <nav class="chan-list">
+      <a href="/#overview" class="on">领域概览<span class="num">01</span></a>
+      <a href="/#picks">精选条目<span class="num">02</span></a>
+      <a href="/#updates">最新更新<span class="num">03</span></a>
+      <a href="/#cats">分类入口<span class="num">04</span></a>
+      <a href="/#deep">深度解析<span class="num">05</span></a>
+      <a href="/#guide">体验指南<span class="num">06</span></a>
+      <a href="/#faq">常见问题<span class="num">07</span></a>
+      <a href="/#comments">用户评论<span class="num">08</span></a>
+      <a href="/#news">相关资讯<span class="num">09</span></a>
+      <a href="/#rel">相关推荐<span class="num">10</span></a>
+      <a href="/#rank">热门榜单<span class="num">11</span></a>
+      <a href="/#timeline">档案时间线<span class="num">12</span></a>
+    </nav>
+  </aside>
+
+  <!-- 主内容 -->
+  <main>
+
+    <!-- 01 概览 -->
+    <section class="sec" id="overview">
+      <div class="sec-head">
+        <h2>领域概览：家庭录像带的五个技术方向</h2>
+      </div>
+      <div class="panel overview">
+        <p>
+          玖玖玖久久九关注的领域，是 1980 到 2010 年间普通家庭用来记录生活的模拟与早期数字影像介质。它大致分成五个方向：<b>磁带类</b>（VHS、S-VHS、VHS-C、Hi8、Video8、MiniDV、Digital8）、<b>光盘类</b>（DVD-R、MiniDVD 摄像机直录盘）、<b>硬盘与闪存类</b>（早期 JVC Everio、索尼 HDR 系列）、<b>胶片类</b>（8 毫米、超 8、16 毫米家庭胶片）以及<b>设备类</b>（摄像机本体、录像机、采集卡与时基校正器）。
+        </p>
+        <p>
+          这些介质的失效方式各不相同。VHS 最常见的是<b>磁粉脱落</b>与<b>霉斑</b>，表现为画面上横向白色拉丝和整段雪花；Hi8 与 Video8 的金属蒸镀带更容易出现<b>润滑层流失</b>，机器走带时发出干涩摩擦声；MiniDV 的隐患在于<b>磁迹错位</b>，一旦在非原机播放容易出现块状马赛克；而 8 毫米胶片则主要是<b>醋酸综合症</b>带来的酸味与卷曲。判断方向不同，处理顺序就完全不同——先判断介质，再判断故障，最后才选设备。
+        </p>
+        <p>
+          当前值得关注的具体内容集中在三块：一是<b>霉斑清洗的干湿法之争</b>，11 月 23 日更新的《Hi8 霉斑清洗全流程》给出了异丙醇浓度与走带速度的对照；二是<b>时基校正器（TBC）的替代方案</b>，11 月 18 日的实测对比了专业 TBC 与软件去抖动在 VHS 上的差异；三是<b>老旧摄像机的电容更换</b>，松下 NV 系列与索尼 CCD-TR 系列的相关档案在过去一个月增长了近三成。对于家里只存着两三盘带子的普通用户，最实用的路径通常是先做清洁、再找一台状态正常的同规格机器回放、最后用采集卡直录，而不是一上来就买昂贵设备。
+        </p>
+        <div class="ov-facts">
+          <div class="ov-fact"><b>1,284</b><span>按机型归档的修复记录</span></div>
+          <div class="ov-fact"><b>7 类</b><span>覆盖的磁带与胶片规格</span></div>
+          <div class="ov-fact"><b>43 篇</b><span>采集与转录设备实测</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 精选 -->
+    <section class="sec" id="picks">
+      <div class="sec-head">
+        <h2>精选修复档案与设备条目</h2>
+        <p class="lead">每条档案对应一个具体机型或一盘具体磁带，讲清故障现象、处理顺序和最终画质。</p>
+      </div>
+      <div class="cards" id="pickGrid">
+
+        <article class="card" data-k="VHS 霉斑 松下 清洗">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/vhs-meiban21/400/300" width="400" height="300" loading="lazy" alt="VHS 录像带霉斑清洗档案封面">
+            <span class="card-tag">VHS 清洁</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#deep">E-180 磁带霉斑干法清洗实录</a></h3>
+            <p class="card-desc">一盘在潮湿阁楼放了十四年的 E-180，霉斑集中在带基外侧。用无纺布配合 99% 异丙醇单向擦拭，绕带三遍后画面拉丝从整段降到两次闪现。</p>
+            <div class="chips"><span class="chip">霉斑</span><span class="chip">异丙醇</span><span class="chip">E-180</span></div>
+            <div class="card-foot"><span class="hot">热度 9,240</span><span>11-23 更新</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-k="Hi8 索尼 摄像机 电容">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/hi8-sony07/400/300" width="400" height="300" loading="lazy" alt="索尼 Hi8 摄像机电容更换记录封面">
+            <span class="card-tag">设备维修</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#deep">索尼 CCD-TR 系列电容鼓包更换</a></h3>
+            <p class="card-desc">通电无反应、电池仓发烫的典型症状。拆机后确认主板三颗电解电容顶部鼓包，替换为同规格固态电容，开机后走带恢复正常但寻像器仍有条纹。</p>
+            <div class="chips"><span class="chip">CCD-TR</span><span class="chip">电解电容</span><span class="chip">通电无反应</span></div>
+            <div class="card-foot"><span class="hot">热度 8,110</span><span>11-21 更新</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-k="MiniDV 采集 磁迹 马赛克">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/minidv-jishi12/400/300" width="400" height="300" loading="lazy" alt="MiniDV 磁迹错位采集排错档案封面">
+            <span class="card-tag">MiniDV</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#deep">MiniDV 换机播放出现块状马赛克的排查</a></h3>
+            <p class="card-desc">同一盘带在原生摄像机正常，换到另一台机器采集就出现周期性马赛克。核心原因是磁鼓转速与磁迹跟踪偏差，逐一排除清洁、张力与采集端缓冲三个变量。</p>
+            <div class="chips"><span class="chip">磁迹错位</span><span class="chip">磁鼓清洁</span><span class="chip">IEEE1394</span></div>
+            <div class="card-foot"><span class="hot">热度 7,655</span><span>11-19 更新</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-k="8毫米 胶片 扫描 醋酸">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/8mm-jiaopian33/400/300" width="400" height="300" loading="lazy" alt="8 毫米家庭胶片扫描档案封面">
+            <span class="card-tag">胶片扫描</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#deep">超 8 家庭胶片醋酸综合症处理</a></h3>
+            <p class="card-desc">开盒有刺鼻酸味、片基轻微卷曲的典型醋酸综合症。先低温隔离，再用 2K 逐帧扫描抢救，最后对偏色做逐镜头白平衡，而不是整卷统一校色。</p>
+            <div class="chips"><span class="chip">超 8</span><span class="chip">醋酸综合症</span><span class="chip">逐帧扫描</span></div>
+            <div class="card-foot"><span class="hot">热度 6,930</span><span>11-16 更新</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-k="时基校正 TBC 采集卡">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/tbc-shiji44/400/300" width="400" height="300" loading="lazy" alt="时基校正器与采集卡对比实测封面">
+            <span class="card-tag">设备实测</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#deep">专业 TBC 与软件去抖动在 VHS 上的差异</a></h3>
+            <p class="card-desc">用同一段含强烈抖动与色彩溢出的 VHS 素材，对比硬件时基校正、采集卡内置稳定与后期软件处理三种路径，重点看画面顶部弯曲与色度噪声的改善幅度。</p>
+            <div class="chips"><span class="chip">TBC</span><span class="chip">去抖动</span><span class="chip">色度噪声</span></div>
+            <div class="card-foot"><span class="hot">热度 6,410</span><span>11-18 更新</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-k="VHS-C 转接盒 卡带">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/vhsc-zhuanjie55/400/300" width="400" height="300" loading="lazy" alt="VHS-C 转接盒使用与卡带处理封面">
+            <span class="card-tag">VHS-C</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#deep">VHS-C 转接盒卡带与走带不畅的处理</a></h3>
+            <p class="card-desc">小型带在转接盒里被齿轮咬住、拉出一段褶皱带基的常见事故。讲清转接盒弹簧片老化如何导致卡带，以及褶皱段是否还有机会通过慢速回放救回。</p>
+            <div class="chips"><span class="chip">转接盒</span><span class="chip">卡带</span><span class="chip">褶皱带基</span></div>
+            <div class="card-foot"><span class="hot">热度 5,870</span><span>11-14 更新</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-k="松下 NV-M7 录像机 走带">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/nvm7-zoudai66/400/300" width="400" height="300" loading="lazy" alt="松下 NV-M7 走带故障对照封面">
+            <span class="card-tag">故障对照</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#updates">松下 NV-M7 走带异响对照表</a></h3>
+            <p class="card-desc">把 NV-M7 常见的六种走带异响按节奏、位置和伴随现象分类，对应到压带轮老化、惰轮缺油、磁鼓轴承磨损三种成因，附拆解顺序。</p>
+            <div class="chips"><span class="chip">NV-M7</span><span class="chip">压带轮</span><span class="chip">走带异响</span></div>
+            <div class="card-foot"><span class="hot">热度 5,340</span><span>11-22 更新</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-k="采集卡 USB 视频 转录">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/caiji-usb77/400/300" width="400" height="300" loading="lazy" alt="USB 视频采集卡转录实测封面">
+            <span class="card-tag">采集设备</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#deep">百元级 USB 采集卡转录 VHS 的真实上限</a></h3>
+            <p class="card-desc">以三款常见芯片方案的采集卡做同源对比，看它们在色彩还原、暗部噪点和音画同步上的差别。结论是能出可用画面，但对严重抖动的带子无能为力。</p>
+            <div class="chips"><span class="chip">USB 采集卡</span><span class="chip">音画同步</span><span class="chip">暗部噪点</span></div>
+            <div class="card-foot"><span class="hot">热度 4,980</span><span>11-11 更新</span></div>
+          </div>
+        </article>
+
+      </div>
+      <div class="no-result" id="noResult">没有找到匹配的条目或机型，试试“VHS”“Hi8”“霉斑”“采集卡”等关键词。</div>
+    </section>
+
+    <!-- 03 最新更新 -->
+    <section class="sec" id="updates">
+      <div class="sec-head">
+        <h2>最新更新与动态</h2>
+        <p class="lead">按时间倒序，记录档案解封、条目上线与设备实测发布。</p>
+      </div>
+      <div class="updates">
+        <div class="update-row">
+          <time>今天 09:30</time>
+          <div><a class="t" href="/#picks">Hi8 霉斑清洗全流程（修订版）</a><span class="s">补充了异丙醇 90% 与 99% 两种浓度的对比，以及走带速度对残留的影响。</span></div>
+          <span class="tagx">条目更新</span>
+        </div>
+        <div class="update-row">
+          <time>今天 08:15</time>
+          <div><a class="t" href="/#rank">热门榜单本周换榜</a><span class="s">E-180 霉斑干法清洗升到第一，MiniDV 磁迹排查首次进入前三。</span></div>
+          <span class="tagx">榜单</span>
+        </div>
+        <div class="update-row">
+          <time>昨天 21:10</time>
+          <div><a class="t" href="/#picks">松下 NV-M7 走带异响对照表上线</a><span class="s">六种异响对应三种成因，附压带轮更换的工具清单。</span></div>
+          <span class="tagx">新条目</span>
+        </div>
+        <div class="update-row">
+          <time>11-23 16:40</time>
+          <div><a class="t" href="/#deep">超 8 胶片醋酸综合症处理档案解封</a><span class="s">补充了低温隔离的温湿度区间与逐帧扫描的偏色校正顺序。</span></div>
+          <span class="tagx">条目更新</span>
+        </div>
+        <div class="update-row">
+          <time>11-22 11:05</time>
+          <div><a class="t" href="/#deep">索尼 CCD-TR 电容更换记录补图</a><span class="s">新增主板三颗电容的位置标注与替换后寻像器条纹的后续观察。</span></div>
+          <span class="tagx">条目更新</span>
+        </div>
+        <div class="update-row">
+          <time>11-21 19:20</time>
+          <div><a class="t" href="/#news">采集卡实测第三期发布</a><span class="s">三款 USB 方案在暗部噪点与音画同步上的差异，附可复现的测试片段说明。</span></div>
+          <span class="tagx">实测</span>
+        </div>
+        <div class="update-row">
+          <time>11-19 10:30</time>
+          <div><a class="t" href="/#picks">MiniDV 磁迹错位排查路径更新</a><span class="s">增加了磁鼓转速偏差与采集端缓冲两个新变量的判断方法。</span></div>
+          <span class="tagx">条目更新</span>
+        </div>
+        <div class="update-row">
+          <time>11-18 15:50</time>
+          <div><a class="t" href="/#deep">TBC 与软件去抖动对比实测发布</a><span class="s">同一段带子的三种处理路径，重点看画面顶部弯曲的改善幅度。</span></div>
+          <span class="tagx">实测</span>
+        </div>
+        <div class="update-row">
+          <time>11-16 09:10</time>
+          <div><a class="t" href="/#cats">VHS-C 分类新增 7 条档案</a><span class="s">转接盒卡带、齿轮打滑、褶皱带基救回三类问题各自独立成档。</span></div>
+          <span class="tagx">分类</span>
+        </div>
+        <div class="update-row">
+          <time>11-14 20:00</time>
+          <div><a class="t" href="/#picks">VHS-C 转接盒卡带处理上线</a><span class="s">讲清弹簧片老化如何咬住带基，以及褶皱段是否值得继续抢救。</span></div>
+          <span class="tagx">新条目</span>
+        </div>
+        <div class="update-row">
+          <time>11-12 13:25</time>
+          <div><a class="t" href="/#guide">体验指南新增“先判断介质再选设备”章节</a><span class="s">把七类介质的失效特征压缩成一页对照，方便第一次处理旧带的人。</span></div>
+          <span class="tagx">指南</span>
+        </div>
+        <div class="update-row">
+          <time>11-11 10:40</time>
+          <div><a class="t" href="/#news">百元级 USB 采集卡实测上线</a><span class="s">三款芯片方案的同源对比，结论明确：能出可用画面，但救不了严重抖动。</span></div>
+          <span class="tagx">实测</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 分类 -->
+    <section class="sec" id="cats">
+      <div class="sec-head">
+        <h2>按介质与故障分类</h2>
+        <p class="lead">八个分类对应用户最常搜索的类别词，点击进入该方向的档案索引。</p>
+      </div>
+      <div class="cats">
+        <a class="cat" href="/#updates"><b>VHS 转录</b><span>E-180 / E-120 带基清洁与采集</span></a>
+        <a class="cat" href="/#updates"><b>Hi8 修复</b><span>金属蒸镀带、润滑层与磁鼓保养</span></a>
+        <a class="cat" href="/#updates"><b>MiniDV 采集</b><span>磁迹错位、IEEE1394 与压缩格式</span></a>
+        <a class="cat" href="/#updates"><b>VHS-C 转接</b><span>小型带、转接盒与卡带事故</span></a>
+        <a class="cat" href="/#updates"><b>8 毫米胶片</b><span>超 8、16 毫米与醋酸综合症</span></a>
+        <a class="cat" href="/#updates"><b>磁带霉斑清洗</b><span>干法、湿法与异丙醇浓度选择</span></a>
+        <a class="cat" href="/#updates"><b>老式摄像机维修</b><span>电容鼓包、走带异响与寻像器条纹</span></a>
+        <a class="cat" href="/#updates"><b>采集卡与 TBC</b><span>时基校正、去抖动与音画同步</span></a>
+      </div>
+    </section>
+
+    <!-- 05 深度解析 -->
+    <section class="sec" id="deep">
+      <div class="sec-head">
+        <h2>深度解析：先判断介质，再决定抢救顺序</h2>
+      </div>
+      <div class="article">
+        <h3>一、七类介质的失效逻辑并不相同</h3>
+        <p>
+          很多人把“旧带子放不出来”当成一个问题，实际上它至少是七种问题。VHS 与 S-VHS 使用氧化物磁粉涂布带基，失效的第一顺位是<b>磁粉脱落</b>，画面表现为横向白色拉丝并伴随磁头堵塞；第二顺位才是霉斑。Hi8 与 Video8 使用金属蒸镀带，带基更薄、磁粉层更致密，常见问题是<b>润滑层流失</b>导致的走带干涩，以及蒸镀层在潮湿环境下被氧化。
+        </p>
+        <p>
+          MiniDV 属于数字磁带，它的失效更隐蔽：磁迹一旦偏移，画面不是逐渐变差，而是突然出现成块的马赛克，且往往在换机器播放时才暴露。VHS-C 的问题常出在外壳而非带基——转接盒弹簧片老化会把带基咬出褶皱。8 毫米与超 8 胶片是化学问题，<b>醋酸综合症</b>会先从气味开始，再是片基卷曲和乳剂层剥离。数字硬盘机型（早期 JVC Everio 等）则要面对机械硬盘坏道与专有编码格式的双重门槛。
+        </p>
+        <div class="callout">
+          判断顺序建议：先看带盒外观与气味 → 再在干净机器上低速快进快退一遍 → 最后才决定是否清洗、是否需要 TBC。跳过前两步直接清洗，很容易把可救的带子擦成不可救。
+        </div>
+
+        <h3>二、霉斑清洗：干法与湿法各自适用什么带子</h3>
+        <p>
+          霉斑清洗是过去一个月讨论最集中的话题。干法指用干燥无纺布单向轻擦，适合霉斑呈点状、分布稀疏的带子；湿法用异丙醇配合绕带机，适合霉斑成片、已经影响走带的情况。两者的关键差异在于<b>溶剂浓度</b>与<b>绕带速度</b>：
+        </p>
+        <ul>
+          <li><b>90% 异丙醇</b>挥发慢、溶解力温和，适合带基较薄的 Hi8 与 MiniDV，但需要更长晾干时间。</li>
+          <li><b>99% 异丙醇</b>溶解力强、挥发快，适合 VHS 的氧化物涂层，但擦拭次数过多会带走磁粉。</li>
+          <li><b>绕带速度</b>建议控制在正常回放的三分之一以下，过快会让未干的溶剂把霉斑重新抹匀。</li>
+          <li>擦拭方向必须<b>单向</b>，来回擦会把霉斑颗粒压进带基缝隙，之后很难再清除。</li>
+        </ul>
+        <p>
+          判断清洗是否成功的标准不是“看着干净”，而是回收放时画面拉丝出现的次数。若清洗后拉丝仍集中在同一时间段，说明该段带基可能已经物理损伤，此时应停止继续处理，直接以慢速回放方式抢救可用画面。
+        </p>
+
+        <h3>三、时基校正与去抖动：什么时候值得上硬件</h3>
+        <p>
+          VHS 画面的顶部弯曲、色彩溢出与行抖动，本质是<b>时基误差</b>。硬件 TBC 在信号进入采集前修正同步脉冲，效果直接但设备成本高；采集卡内置稳定属于折中；后期软件去抖动只能处理整体位移，对同步层面的误差无能为力。
+        </p>
+        <p>
+          11 月 18 日的对比实测给出的结论是：如果带子本身状态较好、只是画面轻微抖动，软件处理足够；如果出现画面顶部明显弯曲、彩色边缘渗出的情况，硬件 TBC 的改善幅度远超软件。判断是否需要上硬件的简易方法是<b>看画面顶部十行</b>——顶部越弯，时基误差越严重。
+        </p>
+
+        <h3>四、老式摄像机的维修优先级</h3>
+        <p>
+          设备类档案里，索尼 CCD-TR 系列与松下 NV 系列的求助最集中。合理的维修优先级是：
+        </p>
+        <ul>
+          <li><b>先电源后走带</b>：通电无反应、电池仓发烫，先查电解电容鼓包，再动走带机构。</li>
+          <li><b>先清洁后更换</b>：走带异响先做磁鼓与压带轮清洁，确认是缺油还是磨损，再决定换件。</li>
+          <li><b>先功能后外观</b>：寻像器条纹、液晶屏老化不影响转录，可以放到最后处理。</li>
+          <li><b>先确认备件</b>：压带轮、惰轮等橡胶件的老化型号差异大，拆机前先确认可替换件来源。</li>
+        </ul>
+        <p>
+          需要强调的是，拆机维修的前提是带子已经完成过一次完整转录。设备一旦拆坏，那盘唯一的带子可能就再也没有机器能读了。
+        </p>
+      </div>
+    </section>
+
+    <!-- 06 体验指南 -->
+    <section class="sec" id="guide">
+      <div class="sec-head">
+        <h2>体验指南：第一次处理旧带子的六步顺序</h2>
+        <p class="lead">讲的是消费与处理顺序，不是页面操作说明。按这个顺序走，能少走大部分弯路。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h4>清点介质，别急着插机器</h4>
+          <p>把带子按外壳规格分开：VHS、VHS-C、Hi8、Video8、MiniDV、Digital8。混在一起处理，很容易把小型带塞进不匹配的机器。</p>
+        </div>
+        <div class="step">
+          <h4>闻气味、看带盒，判断有没有霉与酸</h4>
+          <p>刺鼻酸味指向胶片醋酸综合症；带盒内侧有白色絮状物指向霉斑。这两类都要先隔离，不要和其他带子放在同一个箱子里。</p>
+        </div>
+        <div class="step">
+          <h4>找一台状态正常的同规格机器低速走一遍</h4>
+          <p>快进快退各一遍，听有没有干涩摩擦声、看计数器是否正常。这一步能筛掉大部分“其实没坏，只是机器脏了”的情况。</p>
+        </div>
+        <div class="step">
+          <h4>先转录，再决定要不要清洗</h4>
+          <p>哪怕画面有拉丝，也先把能读出的部分完整录下来。清洗有风险，转录没有。顺序反了，可能连可用的部分都失去。</p>
+        </div>
+        <div class="step">
+          <h4>按故障类型决定是否上 TBC 或专业设备</h4>
+          <p>看画面顶部十行是否明显弯曲。轻微抖动用软件处理即可，明显弯曲才值得投入硬件时基校正。</p>
+        </div>
+        <div class="step">
+          <h4>最后才考虑修机器</h4>
+          <p>设备维修放在带子全部转录完成之后。拆机前确认备件来源，尤其是压带轮、惰轮这类橡胶件的老化型号。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 FAQ -->
+    <section class="sec" id="faq">
+      <div class="sec-head">
+        <h2>常见问题</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>VHS 录像带一般多久会开始出现霉斑？</summary>
+          <div class="ans">取决于存放湿度。相对湿度长期高于 60% 的环境，两到三年就可能在带盒内侧看到白色絮状物；干燥避光环境下，十年以上仍可能完好。判断标准是带盒内侧与带基边缘，而不是画面——画面出现拉丝时，霉斑往往已经扩散到磁粉层。</div>
+        </details>
+        <details>
+          <summary>Hi8 和 Video8 的带子能用同一台机器播放吗？</summary>
+          <div class="ans">多数 Hi8 摄像机向下兼容 Video8，但反过来不行。需要注意的是，用 Hi8 机器播放 Video8 带子时，磁鼓转速与磁迹宽度不同，画质可能不如原生 Video8 机器。如果带子状态较差，优先找原生格式的机器回放。</div>
+        </details>
+        <details>
+          <summary>第一次处理家里的旧带子，从哪一类开始比较好？</summary>
+          <div class="ans">建议从 VHS 开始。它的失效特征最直观，清洗方法最成熟，设备也最容易找到。处理完一两盘 VHS 之后，再碰 Hi8 与 MiniDV，对“什么是正常走带声”会有更准确的判断。</div>
+        </details>
+        <details>
+          <summary>MiniDV 采集一定要用原机吗？换机器为什么会出马赛克？</summary>
+          <div class="ans">不一定，但原机成功率最高。换机器出现块状马赛克，通常是磁迹跟踪与磁鼓转速偏差造成的。可以尝试清洁磁鼓、检查走带张力，以及在采集端增加缓冲。若多台机器都出现同一位置的马赛克，则更可能是带基本身受损。</div>
+        </details>
+        <details>
+          <summary>8 毫米胶片有酸味还能扫吗？</summary>
+          <div class="ans">可以扫，但要先低温隔离，并尽快完成扫描。醋酸综合症不可逆，乳剂层会随时间逐渐剥离。扫描时建议逐帧进行，偏色校正按镜头分别处理，而不是整卷统一校色，否则会放大已经存在的色偏。</div>
+        </details>
+        <details>
+          <summary>家用转录需要买时基校正器吗？</summary>
+          <div class="ans">看画面顶部十行。如果只是轻微抖动、色彩基本正常，普通采集卡加软件处理足够；如果顶部明显弯曲、彩色边缘渗出，硬件时基校正的改善幅度会非常明显。对只有两三盘带子的家庭，租用或借用通常比购买更划算。</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 08 评论 -->
+    <section class="sec" id="comments">
+      <div class="sec-head">
+        <h2>用户评论</h2>
+        <p class="lead">来自实际处理过旧带子的用户，包含中性评价与失败记录。</p>
+      </div>
+      <div class="comments">
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#0f4c5c">老</span><b>老周修带子</b><time>今天 08:42</time></div><p>按干法擦了三遍，画面拉丝从整段降到两次闪现，确实有效。但第三遍擦完磁粉掉得更多了，建议新手擦两遍就停。</p><span class="on">E-180 霉斑干法清洗</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#137a8c">磁</span><b>磁带不眠</b><time>昨天 22:15</time></div><p>NV-M7 的压带轮换了之后异响没了，但走带速度好像偏快，录出来的画面有轻微快放感。可能是惰轮还没调好。</p><span class="on">松下 NV-M7 走带异响</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#d9722c">八</span><b>八毫米旧梦</b><time>11-24 19:03</time></div><p>超 8 那篇的逐镜头白平衡建议很实用，之前整卷统一校色，结果室内外切换的段落全偏了。</p><span class="on">超 8 醋酸综合症处理</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#2f7d5c">D</span><b>DV 采集工位</b><time>11-24 14:20</time></div><p>磁迹错位那篇帮我省了两天。换机器之后马赛克果然是磁鼓转速问题，清洁完就好了。</p><span class="on">MiniDV 磁迹错位排查</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#b8863b">V</span><b>VHS 老放映员</b><time>11-23 21:47</time></div><p>TBC 那篇对比很客观。我用了硬件校正，顶部弯曲改善明显，但色彩溢出还是得靠后期。</p><span class="on">TBC 与软件去抖动对比</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#5d6672">录</span><b>录像带收集者</b><time>11-23 10:12</time></div><p>百元采集卡的结论我认同，但文章里说能出可用画面，我觉得暗部噪点还是有点劝退。预算够的话还是上专业卡。</p><span class="on">USB 采集卡转录实测</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#0f4c5c">小</span><b>小林整理旧物</b><time>11-22 16:35</time></div><p>第一次处理旧带子，按指南先转录后清洗，结果真的有画面。虽然只有十几分钟能用，但已经很满足了。</p><span class="on">体验指南</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#137a8c">H</span><b>Hi8 修不好</b><time>11-22 09:08</time></div><p>CCD-TR 电容换了，开机正常，但寻像器还有条纹。文章里说可以放到最后处理，我打算先转录再管它。</p><span class="on">索尼 CCD-TR 电容更换</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#d9722c">C</span><b>卡带专业户</b><time>11-21 20:51</time></div><p>VHS-C 转接盒弹簧片老化这个点很少人讲，我卡了两次才明白是盒子的问题，不是带子的问题。</p><span class="on">VHS-C 转接盒卡带</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#2f7d5c">胶</span><b>胶片低温柜</b><time>11-20 11:26</time></div><p>醋酸综合症那篇的温湿度区间有点保守，我这边 18 度、40% 湿度放了两周，片子卷曲没有继续加重。</p><span class="on">8 毫米胶片处理</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#b8863b">老</span><b>老物件仓库</b><time>11-19 15:44</time></div><p>文章写得多，但更新频率一般，我关注的 HDR 系列硬盘机条目到现在还没上。期待补。</p><span class="on">分类索引</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#5d6672">磁</span><b>磁带清洗新手</b><time>11-19 08:33</time></div><p>第一次用 99% 异丙醇擦多了，带基表面有点发白。后来按文章说的单向擦两遍就好多了。</p><span class="on">Hi8 霉斑清洗全流程</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#0f4c5c">D</span><b>Digital8 存档</b><time>11-18 22:07</time></div><p>Digital8 的条目还是偏少，希望能讲讲它和 MiniDV 在采集端到底哪个更省事。</p><span class="on">MiniDV 采集</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#137a8c">录</span><b>录像带小卖部</b><time>11-17 13:19</time></div><p>E-120 和 E-180 的带基厚度不一样，清洗时手感差很多。文章里要是能补一句就更好了。</p><span class="on">VHS 转录</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#d9722c">走</span><b>走带异响观察</b><time>11-16 18:58</time></div><p>六种异响里我遇到的是第三种，结果不是压带轮，是惰轮缺油。对照表还是要结合实际情况判断。</p><span class="on">NV-M7 走带异响对照</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#2f7d5c">小</span><b>小城旧影像</b><time>11-15 10:41</time></div><p>指南的顺序很靠谱。我原来打算先洗带子，看完改成先转录，结果保住了大部分画面。</p><span class="on">体验指南</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#b8863b">时</span><b>时基校正爱好者</b><time>11-14 21:12</time></div><p>TBC 那篇的“看顶部十行”判断法很实用，比讲一堆参数直观多了。</p><span class="on">TBC 与软件去抖动对比</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#5d6672">胶</span><b>胶片扫描工</b><time>11-13 09:55</time></div><p>逐帧扫描确实比整卷统一处理效果好，但对设备要求更高。文章里给的偏色校正顺序值得参考。</p><span class="on">超 8 醋酸综合症处理</span></div>
+      </div>
+    </section>
+
+    <!-- 09 资讯 -->
+    <section class="sec" id="news">
+      <div class="sec-head">
+        <h2>相关资讯</h2>
+      </div>
+      <div class="news">
+        <article class="news-item">
+          <div class="thumb"><img src="https://picsum.photos/seed/news-vhs-tbc88/600/400" width="600" height="400" loading="lazy" alt="时基校正设备需求变化资讯配图"></div>
+          <div class="nb">
+            <div class="meta">2026-11-24</div>
+            <h3>时基校正设备二手价格上行，VHS 转录需求带动</h3>
+            <p>过去一个月内，多款专业时基校正器的二手成交价上涨，卖家普遍提到家庭转录需求增加。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="thumb"><img src="https://picsum.photos/seed/news-hi8-meiban09/600/400" width="600" height="400" loading="lazy" alt="Hi8 磁带霉斑清洗方法讨论配图"></div>
+          <div class="nb">
+            <div class="meta">2026-11-23</div>
+            <h3>Hi8 霉斑清洗的干湿法之争出现新数据</h3>
+            <p>修订版流程补充了两种异丙醇浓度的对比，结论倾向按带基厚度而非霉斑面积选方法。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="thumb"><img src="https://picsum.photos/seed/news-minidv-jishi10/600/400" width="600" height="400" loading="lazy" alt="MiniDV 磁迹错位排查资讯配图"></div>
+          <div class="nb">
+            <div class="meta">2026-11-21</div>
+            <h3>MiniDV 换机播放出马赛克的讨论集中在磁鼓转速</h3>
+            <p>社区近期多条记录指向同一结论：换机播放前先做磁鼓清洁与张力检查，可减少大部分误判。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="thumb"><img src="https://picsum.photos/seed/news-8mm-suan11/600/400" width="600" height="400" loading="lazy" alt="8 毫米胶片醋酸综合症资讯配图"></div>
+          <div class="nb">
+            <div class="meta">2026-11-19</div>
+            <h3>超 8 胶片醋酸综合症的低温隔离区间被重新讨论</h3>
+            <p>有用户提出更保守的温湿度区间，认为可延缓乳剂层剥离，但需更长隔离周期。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="thumb"><img src="https://picsum.photos/seed/news-vhsc-ka12/600/400" width="600" height="400" loading="lazy" alt="VHS-C 转接盒卡带资讯配图"></div>
+          <div class="nb">
+            <div class="meta">2026-11-17</div>
+            <h3>VHS-C 转接盒卡带事故报告增多，弹簧片老化是主因</h3>
+            <p>多条记录显示，转接盒内部弹簧片弹性衰减会在插入瞬间咬住带基，形成褶皱。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="thumb"><img src="https://picsum.photos/seed/news-caiji-usb13/600/400" width="600" height="400" loading="lazy" alt="USB 采集卡实测资讯配图"></div>
+          <div class="nb">
+            <div class="meta">2026-11-12</div>
+            <h3>百元级 USB 采集卡实测引发预算与效果讨论</h3>
+            <p>三款芯片方案的同源对比发布后，讨论焦点集中在暗部噪点与音画同步是否值得妥协。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="sec" id="rel">
+      <div class="sec-head">
+        <h2>延伸方向与相关推荐</h2>
+        <p class="lead">与热门条目不同，这里指向更细的延伸方向与具体条目名。</p>
+      </div>
+      <div class="rel-tags">
+        <a href="/#deep">磁鼓清洁与保养<small>12 条</small></a>
+        <a href="/#deep">压带轮更换型号对照<small>8 条</small></a>
+        <a href="/#deep">Digital8 与 MiniDV 采集差异<small>5 条</small></a>
+        <a href="/#deep">超 8 胶片逐帧扫描流程<small>9 条</small></a>
+        <a href="/#deep">时基校正器选购判断<small>6 条</small></a>
+        <a href="/#deep">VHS-C 转接盒弹簧片修复<small>4 条</small></a>
+        <a href="/#deep">早期硬盘摄像机坏道处理<small>3 条</small></a>
+        <a href="/#deep">家庭影像长期保存介质选择<small>11 条</small></a>
+      </div>
+    </section>
+
+    <!-- 11 榜单 -->
+    <section class="sec" id="rank">
+      <div class="sec-head">
+        <h2>本周热门修复档案</h2>
+        <p class="lead">按过去七天的阅读与收藏综合排序，截至 2026-11-25 09:30。</p>
+      </div>
+      <div class="rank">
+        <div class="rank-row"><span class="rank-no">1</span><div class="rank-main"><b>E-180 磁带霉斑干法清洗实录</b><span>VHS 清洁 · 11-23 更新</span></div><span class="rank-val">9,240</span></div>
+        <div class="rank-row"><span class="rank-no">2</span><div class="rank-main"><b>索尼 CCD-TR 系列电容鼓包更换</b><span>设备维修 · 11-21 更新</span></div><span class="rank-val">8,110</span></div>
+        <div class="rank-row"><span class="rank-no">3</span><div class="rank-main"><b>MiniDV 换机播放出现块状马赛克</b><span>MiniDV · 11-19 更新</span></div><span class="rank-val">7,655</span></div>
+        <div class="rank-row"><span class="rank-no">4</span><div class="rank-main"><b>超 8 家庭胶片醋酸综合症处理</b><span>胶片扫描 · 11-16 更新</span></div><span class="rank-val">6,930</span></div>
+        <div class="rank-row"><span class="rank-no">5</span><div class="rank-main"><b>专业 TBC 与软件去抖动的差异</b><span>设备实测 · 11-18 更新</span></div><span class="rank-val">6,410</span></div>
+        <div class="rank-row"><span class="rank-no">6</span><div class="rank-main"><b>VHS-C 转接盒卡带与走带不畅</b><span>VHS-C · 11-14 更新</span></div><span class="rank-val">5,870</span></div>
+        <div class="rank-row"><span class="rank-no">7</span><div class="rank-main"><b>松下 NV-M7 走带异响对照表</b><span>故障对照 · 11-22 更新</span></div><span class="rank-val">5,340</span></div>
+      </div>
+    </section>
+
+    <!-- 12 时间线 -->
+    <section class="sec" id="timeline">
+      <div class="sec-head">
+        <h2>档案时间线：最近一次整理</h2>
+      </div>
+      <div class="panel">
+        <div class="timeline">
+          <div class="tl-item"><b>11 月 25 日 · 修订 Hi8 霉斑清洗流程</b><time>今天 09:30</time><p>补充异丙醇浓度与走带速度对照，明确干湿法适用边界。</p></div>
+          <div class="tl-item"><b>11 月 22 日 · 上线 NV-M7 走带异响对照表</b><time>11-22 11:05</time><p>六种异响对应三种成因，附拆解与工具清单。</p></div>
+          <div class="tl-item"><b>11 月 18 日 · 发布 TBC 与软件去抖动对比</b><time>11-18 15:50</time><p>以画面顶部十行为判断依据，给出是否上硬件的分界。</p></div>
+          <div class="tl-item"><b>11 月 14 日 · 解封 VHS-C 转接盒卡带档案</b><time>11-14 20:00</time><p>补充弹簧片老化导致褶皱带基的处理路径。</p></div>
+          <div class="tl-item"><b>11 月 11 日 · 上线百元级 USB 采集卡实测</b><time>11-11 10:40</time><p>三款芯片方案同源对比，给出真实画质上限。</p></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右侧栏 -->
+  <aside class="side" aria-label="辅助信息">
+    <div class="side-card">
+      <h3>正在处理的热门条目</h3>
+      <ul class="side-list">
+        <li><a href="/#picks"><span class="n">01</span><span>E-180 磁带霉斑干法清洗<span class="d">今天 09:30 更新</span></span></a></li>
+        <li><a href="/#picks"><span class="n">02</span><span>CCD-TR 电容鼓包更换<span class="d">11-21 更新</span></span></a></li>
+        <li><a href="/#picks"><span class="n">03</span><span>MiniDV 磁迹错位排查<span class="d">11-19 更新</span></span></a></li>
+        <li><a href="/#picks"><span class="n">04</span><span>超 8 醋酸综合症处理<span class="d">11-16 更新</span></span></a></li>
+        <li><a href="/#picks"><span class="n">05</span><span>VHS-C 转接盒卡带<span class="d">11-14 更新</span></span></a></li>
+      </ul>
+    </div>
+
+    <div class="side-card">
+      <h3>档案规模</h3>
+      <div class="side-stat">
+        <div><b>1,284</b><span>修复档案</span></div>
+        <div><b>96</b><span>机型对照</span></div>
+        <div><b>43</b><span>设备实测</span></div>
+        <div><b>7</b><span>介质类别</span></div>
+      </div>
+    </div>
+
+    <div class="side-cta">
+      <h3>家里有带子不知从哪开始？</h3>
+      <p>先按介质分类，再判断故障类型。指南给出六步顺序，帮你避免把可救的带子擦坏。</p>
+      <a class="btn-main" href="/#guide">查看六步处理顺序</a>
+    </div>
+
+    <div class="side-card">
+      <h3>本周新增档案</h3>
+      <ul class="side-list">
+        <li><a href="/#updates"><span class="n">+</span><span>Hi8 润滑层流失判断<span class="d">11-25</span></span></a></li>
+        <li><a href="/#updates"><span class="n">+</span><span>E-120 带基厚度差异<span class="d">11-24</span></span></a></li>
+        <li><a href="/#updates"><span class="n">+</span><span>惰轮缺油与异响关系<span class="d">11-22</span></span></a></li>
+        <li><a href="/#updates"><span class="n">+</span><span>Digital8 采集端缓冲设置<span class="d">11-20</span></span></a></li>
+      </ul>
+    </div>
+  </aside>
+
+</div>
+
+<footer class="site">
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 44 44" role="img" aria-label="玖玖玖久久九 磁带标志">
+          <rect x="2" y="8" width="40" height="28" rx="5" fill="#137a8c"/>
+          <rect x="7" y="13" width="30" height="13" rx="2" fill="#0b3a47"/>
+          <circle cx="15.5" cy="19.5" r="4.2" fill="#ffcf8f"/>
+          <circle cx="28.5" cy="19.5" r="4.2" fill="#ffcf8f"/>
+          <circle cx="15.5" cy="19.5" r="1.5" fill="#0b3a47"/>
+          <circle cx="28.5" cy="19.5" r="1.5" fill="#0b3a47"/>
+          <rect x="12" y="29" width="20" height="3" rx="1.5" fill="#ffcf8f"/>
+        </svg>
+        <span class="brand-text">
+          <span class="name">玖玖玖久久九</span>
+          <span class="sub">TAPE ARCHIVE</span>
+        </span>
+      </div>
+      <p>玖玖玖久久九是一个围绕老式摄像机、磁带与家庭影像修复的档案站。按机型、磁带规格和故障现象归档，帮助家里存着旧录像带的人判断介质、选择处理顺序。</p>
+    </div>
+    <div>
+      <h4>档案方向</h4>
+      <ul>
+        <li><a href="/#cats">VHS 转录</a></li>
+        <li><a href="/#cats">Hi8 修复</a></li>
+        <li><a href="/#cats">MiniDV 采集</a></li>
+        <li><a href="/#cats">8 毫米胶片</a></li>
+        <li><a href="/#cats">采集卡与 TBC</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>阅读入口</h4>
+      <ul>
+        <li><a href="/#overview">领域概览</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#rank">热门榜单</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>关于档案</h4>
+      <ul>
+        <li><a href="/#timeline">档案时间线</a></li>
+        <li><a href="/#updates">最新更新</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#rel">延伸方向</a></li>
+        <li><a href="/#comments">用户评论</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 玖玖玖久久九 · 家庭影像档案 · 内容为整理与实测记录</span>
+    <span>档案数据截至 2026-11-25 · 条目按介质与故障现象归档</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var q = document.getElementById('q');
+  var btn = document.getElementById('qbtn');
+  var grid = document.getElementById('pickGrid');
+  var noRes = document.getElementById('noResult');
+  if(!grid) return;
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+  function run(){
+    var kw = (q.value || '').trim().toLowerCase();
+    if(!kw){
+      cards.forEach(function(c){ c.style.display = ''; });
+      noRes.style.display = 'none';
+      return;
+    }
+    var hit = 0;
+    cards.forEach(function(c){
+      var text = (c.getAttribute('data-k') + ' ' + c.textContent).toLowerCase();
+      var ok = text.indexOf(kw) > -1;
+      c.style.display = ok ? '' : 'none';
+      if(ok) hit++;
+    });
+    noRes.style.display = hit ? 'none' : 'block';
+  }
+  btn.addEventListener('click', run);
+  q.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); run(); } });
+  q.addEventListener('input', function(){ if(!q.value) run(); });
+})();
+</script>
+</body>
+                                     </html>
